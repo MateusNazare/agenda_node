@@ -1,0 +1,13 @@
+{
+   "type": "sqlite",
+   "database": "src/database/agenda.sqlite",
+   "entities": [
+      "src/entitis/**/*.ts"
+   ],
+   "migrations": [
+      "src/migrations/**/*.ts"
+   ],
+   "cli": {
+      "migrationsDir": "./src/database/migrations"
+   }
+}
