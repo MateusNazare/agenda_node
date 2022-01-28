@@ -1,8 +1,7 @@
 import { getCustomRepository } from "typeorm";
-import { server } from "../app";
+import { server, serverTCP } from "../app";
 import { Task } from "../entities/Task";
 import { TasksRepository } from "../repositories/TasksRepository";
-import { Buffer } from 'buffer';
 
 interface ICreateTaskDTO {
     name: string,
@@ -22,6 +21,11 @@ class CreateTaskService {
         });
 
         await tasksRepository.save(task);
+
+        serverTCP.write(
+            `A tarefa ${task.name} foi marcada para o dia ${task.date}`,
+            () => {}
+        );
 
         server.send(
             `A tarefa ${task.name} foi marcada para o dia ${task.date}`,
