@@ -2,7 +2,7 @@
 
 - Esse projeto foi desenvolvido com propósitos educacionais apenas, para a disciplina de Sistemas Distribuídos 2021/2 do curso de Engenharia de Computação do Instituto Federal do Sul de Minas Gerais.
 
-## 🚀 Como funciona
+### 🚀 Como funciona
 ---
 
 - O projeto consiste basicamente em um crud de tarefas e ao criar uma tarefa será emetido uma mensagem via udt e tcp.
@@ -22,14 +22,14 @@
 - Para executar o cliente que receberá a mensagem via UDP basta digitar o comando 'node clientUdp.js';
 - Para executar o cliente que receberá a mensagem via TCP basta digitar o comando 'node clientTcp.js';
 
-## 🛠️ Construído com
+### 🛠️ Construído com
 ---
 
 * [TypeScript] - Linguagem de programação usada;
 * [Yarn] - Gerenciador de dependências;
 * [Express] - Framework para criação de APIs em node;
 
-## ✒️ Autores
+### ✒️ Autores
 ---
 
 * **Antonio Amaral** - *Desenvolvimento, Arquitetura e Documentação* - [oamaraldev](https://github.com/oamaraldev)
